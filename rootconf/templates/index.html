@@ -13,8 +13,8 @@
         <nav>
           <a href="#home" onclick="scroll('home')">home</a>
           <a href="#participate" onclick="scroll('participate')">participate</a>
-          <a href="#speak" onclick="scroll('participate')">speak</a>
-          <a href="#sponsor" onclick="scroll('participate')">sponsor</a>
+          <a href="#sponsors" onclick="scroll('sponsors')">sponsors</a>
+          <a href="#schedule" onclick="scroll('schedule')">talks</a>
           <a href="#venue" onclick="scroll('venue')">venue</a>
         </nav>
       </div>
@@ -64,20 +64,24 @@
       <div class="row content" style="margin-top: 10px">
         <div class="span12">
           <h2>About rootconf</h2>
-          <p>After last year's <a href="http://phpcloud.hasgeek.com/">Scaling with PHP in the cloud</a>, HasGeek is organizing Rootconf, an annual conference for sysadmins, devops, and BOFHs to share experience and knowledge, to teach, learn, and hangout with friends and colleagues. Rootconf will be held on <strong>May 26th, 2011, at Dharamaram College, Bangalore</strong>.</p>
-          <p>If you're a Sysadmin, come over, share your experience, and crack a joke about perl.</p>
-          <h3>Configuration Deployment/Magement</h3>
+          <p>After last year's <a href="http://phpcloud.hasgeek.com/">Scaling with PHP in the cloud</a>, HasGeek is organizing Rootconf, an annual conference for sysadmins, devops, and BOFHs to share experience and knowledge, to teach, learn, and hangout with friends and colleagues. Rootconf will be held on <strong>May 26th, 2012, at Dharamaram College, Bangalore</strong>.</p>
+          <p>If you're a Sysadmin, come over, share your experience, and crack a joke about Perl.</p>
+          <h3>Configuration Deployment/Management</h3>
           <p>Have a lot of servers? How do you manage your herd? Share and learn the tricks of configuration management with your fellow server cowboys/girls. Talk about your organization!</p>
           <h3>Performance Tuning ("But does it scale?") </h3>
-          <p>Dealing with a high-traffic operations and your server is not performing as well as expected? D you know how to squeeze the last inch of performance out of your server? This track will focus on showing you how!</p>
+          <p>Dealing with a high-traffic operations and your server is not performing as well as expected? Do you know how to squeeze the last inch of performance out of your server? This track will focus on showing you how!</p>
           <h3>Security</h3>
           <p>Securing access to your server can be a daunting task. Come and talk about how you do it.</p>
+          <h3>Virtualization and Cloud</h3>
+          <p>Do you run your own cloud? Do you use virtualization? We'd love to hear about it!</p>
+          <h3>Monitoring</h3>
+          <p>How do you get to know of fires? How do you use the various packages around? Share your monitoring methods and learn new ones from others.</p>
         </div>
       </div>
       <div class="row content full" id="participate">
         <div class="span4">
           <h2>Participate</h2>
-          <p>Get the super early geek tickets now!</p>
+          <p>Get the tickets now!</p>
           <p>Look at the <a href="http://funnel.hasgeek.com/rootconf">existing proposals.</a></p>
           <p><a class="btn-warning btn-large" target=_blank href="http://rootconf.doattend.com/">Book now</a></p>
         </div><!--/span-->
@@ -93,6 +97,120 @@
         </div><!--/span-->
       </div><!--/row-->
       
+      <div class="row content" id="sponsors">
+        <div class="span12"><h2>Sponsors</h2></div>
+        </div><!--/row-->
+        <div class="row">
+            <article class="open hsponsor span2">
+            <p class="logo"><a data-toggle="modal" href="#sponsor-e2enetworks"><img alt="E2E Networks" src="{{ url_for('static', filename='img/sponsors/e2e.png') }}"></a></p>
+            </article>
+            <article class="open hsponsor span2">
+            <p class="logo"><img alt="Become a Sponsor" src="{{ url_for('static', filename='img/you.gif') }}"></p>
+            </article>
+
+      <div class="modal fade" id="sponsor-e2enetworks">
+        <div class="modal-header">
+          <a class="close" data-dismiss="modal">&times;</a>
+          <h3>E2E Networks</h3>
+        </div>
+        <div class="modal-body">
+          <p><em>Low latency cloud hosting in India</em></p>
+          <p><a class="sponsor-exit" href="http://e2enetworks.com">E2E Networks Private Limited</a> is India’s first homegrown cloud computing hosting venture. An exciting blend of cutting-edge technology, world class talent, highly skilled managed services and a commitment to bringing low latency hosting at a reasonable price. E2E is one of India’s fastest growing hosting companies, with a number of industry-leading customers in its portfolio. E2E works for both small custom testbeds for web applications still in development or multi-location, multi-terabyte, multi-gigabit deployments for some of the busiest Indian web verticals.</p>
+          <p>E2E hosts HasGeek’s websites, including this website. 
+        </div>
+        <div class="modal-footer">
+          <a href="http://www.e2enetworks.com/" class="btn btn-primary sponsor-exit">Visit E2E</a>
+          <a data-dismiss="modal" class="btn">Close</a>
+        </div>
+      </div>
+      </div><!--/row-->
+
+    <div class="row content" id="schedule">
+      <div class="span12"><h2 id="talks">Selected Talks</h2></div>
+    </div>
+    <div class="row">
+    <div class="span4">
+        <article class="session-video clearfix">
+            <a href="http://www.youtube.com/watch?v=JBqVtdzvpos">
+            <p class="thumbnail span2"><img alt="Thumbnail" src="http://img.youtube.com/vi/JBqVtdzvpos/mqdefault.jpg"></p>
+            <h4>Continuous Integration made fun with Jenkins & Hubot</h4>
+            </a>
+            <h5>Sameer Segal</h5>
+        </article>
+    </div>
+    <div class="span4">
+        <article class="session-video clearfix">
+            <a href="http://www.youtube.com/watch?v=kZ-kVqdpiZM">
+            <p class="thumbnail span2"><img alt="Thumbnail" src="http://img.youtube.com/vi/kZ-kVqdpiZM/mqdefault.jpg"></p>
+            <h4>Securing a Linux Web Server in 10 Steps or Less</h4>
+            </a>
+            <h5>Akash Mahajan</h5>
+        </article>
+    </div>
+    </div>
+    <div class="row schedule">
+      <div class="span12">
+        <table>
+          <tr>
+            <th>Talk</th>
+            <th>Speaker</th>
+            <th>Track</th>
+          </tr>
+          <tr>
+            <td><a href="http://funnel.hasgeek.com/rootconf/294-puppet-in-stand-alone-mode-or-why-config-management-is-useful-for-0-systems">Puppet in Stand Alone Mode or Why Config management is useful for 0+ systems</a></td>
+            <td>Sarguru Nathan</td>
+            <td>Configuration Management</td>
+          </tr>
+          <tr>
+            <td><a href="http://funnel.hasgeek.com/rootconf/288-continuous-integration-made-fun-with-jenkins-hubot-gtalk">Continuous Integration made fun with Jenkins & Hubot (+ Gtalk)</a></td>
+            <td>Sameer Segal</td>
+            <td>Configuration Management</td>
+          </tr>
+          <tr>
+            <td><a href="http://funnel.hasgeek.com/rootconf/314-build-your-own-storage-device-san">Build your own Storage Device (SAN) !</a></td>
+            <td>Sriram Narayanan</td>
+            <td>Cloud and Virtualization</td>
+          </tr>
+          <tr>
+            <td><a href="http://funnel.hasgeek.com/rootconf/313-performance-tuning-101-an-introduction-to-performance-tuning-an-application-in-managed-environment">Performance Tuning 101 - An introduction to performance tuning an application in managed environment</a></td>
+            <td>Janmejay Singh</td>
+            <td>Performance Tuning</td>
+          </tr>
+          <tr>
+            <td><a href="http://funnel.hasgeek.com/rootconf/304-high-performant-virtualization-using-openvz">High performant virtualization using OpenVZ</a></td>
+            <td>Nilesh B</td>
+            <td>Cloud and Virtualization</td>
+          </tr>
+          <tr>
+            <td><a href="http://funnel.hasgeek.com/rootconf/301-automated-and-adaptive-infrastructure-monitoring-using-chef-nagios-and-graphite">Automated and Adaptive Infrastructure Monitoring using Chef, Nagios and Graphite</a></td>
+            <td>Pratima Singh</td>
+            <td>Configuration Management</td>
+          </tr>
+          <tr>
+            <td><a href="http://funnel.hasgeek.com/rootconf/296-virtualization-with-kvm-and-libvirt">Virtualization with KVM (and Libvirt)</a></td>
+            <td>Kashyap Chamarthy</td>
+            <td>Cloud and Virtualization</td>
+          </tr>
+          <tr>
+            <td><a href="http://funnel.hasgeek.com/rootconf/333-creating-provisioning-cloud-resources-with-aws-cloudformation">Creating & Provisioning Cloud Resources with AWS CloudFormation</a></td>
+            <td>Janakiram MSV</td>
+            <td>Cloud and Virtualization</td>
+          </tr>
+          <tr>
+            <td><a href="http://funnel.hasgeek.com/rootconf/329-securing-a-linux-web-server-in-10-steps-or-less">Securing a Linux Web Server in 10 Steps or Less</a></td>
+            <td>Akash Mahajan</td>
+            <td>Security</td>
+          </tr>
+          <tr>
+            <td><a href="http://funnel.hasgeek.com/rootconf/324-openshift-deployments-for-the-rest-of-us">Openshift: Deployments for the rest of us</a></td>
+            <td>Anurag</td>
+            <td>Cloud and Virtualization</td>
+          </tr>
+        </table>
+      </div>
+    </div>
+
+
       <div class="row content" id="venue"><div class="span12"><h2 id="location">Venue</h2></div></div>
        <div class="row">
         <div class="span6">
@@ -100,10 +218,13 @@
         </div>
         <div class="span6">
         <h3 style="text-transform: uppercase; font-size: 25pt">Dharmaram Vidya Kshetram</h3>
-        <p><strong>Christ University Campus</strong>, Bangalore</p><hr />
-        <p>Rootconf is set in Dharmaram College's beautiful, tree-filled campus (nothing like the back-to-college feeling). There's three rooms, and plenty of space to Hangout™ in meat-space. You'll love the garden.
-        To get there, enter Christ University's main entrance gate (the one on the right) and drive straight down to Dharmaram College, within the campus. Christ University is at Dairy Circle, half a kilometre from the Forum Mall.</p><hr />
-        <h3><span>WHEN</span> : May 26, 2012</h3>
+            <p><strong>Christ University Campus</strong>, Bangalore</p><hr />
+            <p>Rootconf is set in Dharmaram College's beautiful, tree-filled campus (nothing like the back-to-college feeling).</p>
+            <p>To get there, enter Christ University’s main entrance gate on Marigowda Road and drive straight down to Dharmaram Vidya Kshetram, within the campus.
+            Christ University is at Dairy Circle, half a kilometre from the Forum mall. Rootconf is in DVK's Theology block, behind the main auditorium.
+            If you are approaching from Dairy Circle, drive up to Hosur Road for a U-turn. The campus has sufficient parking space.</p>
+            <p><a href="http://goo.gl/maps/jYyv">View location in Google Maps</a></p>
+          <h3><span>WHEN</span> : May 26, 2012</h3>
         </div>
       </div>
       <div class="row content" id="hasgeek">
