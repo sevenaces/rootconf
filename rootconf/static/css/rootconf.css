@@ -37,7 +37,6 @@ footer .footer-inner	{
 	padding-top: 25px;
 }
 
-
 .header-logo	{
   height: 35px;
   font-size: 30pt;
@@ -329,3 +328,5 @@ h3	{
 .hsponsor-community:after{ content: "Community"; }
 .modal-header h3 { font-size: 1.8em; margin-bottom: 0.4em; color: black; }
 .modal-body { font-size: 16px; color: black; }
+
+.page-header {margin-top: 130px;}
